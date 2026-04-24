@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Lightweight Warning System Demo for PawPal+
+Lightweight Warning System Demo for Pawlpal Ultra
 Shows how the time-based scheduling features provide fast warning messages
 """
 
@@ -8,7 +8,7 @@ from pawpal_system import Schedule, Owner, Pet, Task, Priority, Frequency, Sched
 from datetime import time as datetime_time
 
 def demo_lightweight_warnings():
-    print("🐾 PawPal+ Lightweight Warning System Demo")
+    print("🐾 Pawlpal Ultra Lightweight Warning System Demo")
     print("=" * 50)
 
     # Create a schedule with some issues

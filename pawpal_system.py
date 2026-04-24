@@ -24,6 +24,8 @@ class Frequency(Enum):
     ONCE = "once"
     DAILY = "daily"
     WEEKLY = "weekly"
+    MONTHLY = "monthly"
+    YEARLY = "yearly"
 
 
 @dataclass
@@ -154,10 +156,10 @@ class Schedule:
 
     def create_plan(self) -> None:
         """Create an optimized plan in-place for this schedule"""
-        priority_order = {Priority.HIGH: 3, Priority.MEDIUM: 2, Priority.LOW: 1}
+        priority_order = {"high": 3, "medium": 2, "low": 1}
         self.tasks = sorted(
             self.tasks,
-            key=lambda t: (-priority_order[t.priority], t.duration_minutes)
+            key=lambda t: (-priority_order[t.priority.value], t.duration_minutes)
         )
 
     def sort_by_duration(self) -> None:

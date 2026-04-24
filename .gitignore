@@ -3,3 +3,23 @@ __pycache__/
 .venv_new/
 .pytest_cache/
 .DS_Store
+
+# API keys and secrets
+.env
+.env.*
+*.key
+secrets.toml
+.streamlit/secrets.toml
+
+# Python artifacts
+*.pyc
+*.pyo
+*.egg-info/
+
+# Editor/OS artifacts
+.idea/
+.vscode/
+Thumbs.db
+
+# Personal notes
+Personal Notes/
